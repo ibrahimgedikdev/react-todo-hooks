@@ -1,0 +1,27 @@
+.add-todo-container{
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.003);
+    box-shadow: inset 0 -2px 1px #dcddde;
+    height: 55px;
+    .edit-heading{
+        position: absolute;
+    }
+    .input-icon{
+        margin-left: 1rem;
+    }
+    .add-todo-input{
+        border: none;
+        width: 100%;
+        outline: none;
+        outline-offset: 0;
+        padding: 1rem 0 0.5rem 2rem;
+        font-size: 1rem;
+        &::placeholder{
+            color: #bbc0c4;
+        }
+        &.edit-todo-input{
+            padding-left: 4.25rem;
+        }
+    }
+}

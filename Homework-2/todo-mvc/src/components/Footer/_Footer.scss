@@ -1,0 +1,21 @@
+.footer{
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        box-shadow: inset 0 -2px 1px #bdc3c7;
+        .todo-count{
+            color: #2c3e50;
+        }
+        .filter-btns{
+           button{
+               margin: 0 0.3rem;
+               cursor: pointer;
+               color: #2c3e50;
+           }
+        }
+        .clear-btn{
+            color: #2c3e50;
+        }
+    }
+}

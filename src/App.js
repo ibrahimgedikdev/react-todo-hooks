@@ -115,6 +115,7 @@ function App() {
          <Footer 
            todos={todos}
            setStatus={setStatus}
+           setTodos={setTodos}
           />
        </div>
     </div>

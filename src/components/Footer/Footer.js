@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer({todos, setStatus }) {
+function Footer({todos, setTodos, setStatus }) {
     const unCompletedTodos = todos && todos.filter((todo) => {
        return todo.completed === false
     })
@@ -14,7 +14,7 @@ function Footer({todos, setStatus }) {
                    <button onClick={() => setStatus('Active')}>Active</button>
                    <button onClick={() => setStatus('Completed')}>Completed</button>
                 </div>
-                <button className="clear-btn">Clear completed</button>
+                <button className="clear-btn" onClick={() => setTodos([])}>Clear completed</button>
             </div> 
         </footer>
     )
